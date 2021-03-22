@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+import { useState } from 'react'
 import './App.css';
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import FindBin from './pages/FindBin'
+import NavBar from './components/NavBar'
 
 function App() {
+
+  const [isNav, setIsNav] = useState(true)
+
+  const switchNav = () => {
+    setIsNav(!isNav)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <div className="content">
+        {isNav && <div className="nav">
+            <NavBar />
+          </div>}
+          <Switch>
+            <Route exact path="/">
+              <div className="findBin">
+                <FindBin switchNav={switchNav} />
+              </div>
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
 }
 

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.flexContainer {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width:100%;
+    font-family: 'Pacifico', cursive;
+    font-size: 3vh;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-family: sans;
+    font-weight: bolder;
+    font-size: 1.7vh;
+}
+a:hover {
+    color: rgb(0, 175, 0);
+    text-decoration: underline;
+}

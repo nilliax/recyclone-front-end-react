@@ -1,0 +1,16 @@
+.root {
+    padding-top: 5vh;
+}
+.elem {
+    display: block;
+    cursor: pointer;
+    margin-top: 9vh;
+}
+.elem.active {
+
+}
+
+.elem:hover {
+    border-right: 3px solid green;
+    border-left: 3px solid green;
+}
