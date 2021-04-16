@@ -16,6 +16,7 @@ function FilterForm({binToAdd, addNewBin}) {
     }
 
     const handleSubmit = (e) => {
+        
         e.preventDefault()
         binToAdd.types = type;
         binToAdd.colors = color;

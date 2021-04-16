@@ -6,7 +6,7 @@ const useFetchBins = (location, binsData) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        const url = `http://localhost:5001/public/bins?lat=${location.lat}&long=${location.long}&rad=${binsData.rad}`
+        const url = `http://192.168.2.46:5001/public/bins?lat=${location.lat}&long=${location.long}&rad=${binsData.rad}`
         fetch(url)
         .then(res => {
             if(!res.ok) {

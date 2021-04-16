@@ -49,6 +49,7 @@ function FindBin(props) {
                 break
             case 'home':
                 getCurrLocation()
+            
         }
     }
 
@@ -93,7 +94,7 @@ function FindBin(props) {
                 color: binToAdd.colors[i]
             }
             console.log(binObject)
-            let link = 'http://localhost:5001/public/bins'
+            let link = `http://192.168.2.46:5001/public/bins`
             fetch(link, {
                 method: 'POST',
                 body: JSON.stringify(binObject),

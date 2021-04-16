@@ -32,7 +32,7 @@ function MyMap ({location, bins, clickable, binToAdd}) {
 
     return (
         <div>
-            <Map center={[location.lat, location.long]} zoom={13} onClick={handleClick}>
+            <Map center={[location.lat, location.long]} zoom={13} onMouseDown={handleClick}>
                 <TileLayer 
                 attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

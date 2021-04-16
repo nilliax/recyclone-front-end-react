@@ -2,19 +2,17 @@
     display: flex;
     background-color: rgb(30, 32, 30);
 }
-
 .map {
     width: 100%;
-    float: right;
 }
 .sidePane {
-    width: 60px;
+    min-width: 40px;
+    padding: 5px;
     text-align: center;
 }
 .filterForm {
     margin-top: 5vh;
-    width: 40vw;
     color: white;
     text-align: left;
-    padding-left: 30px;
+    padding: 20px;
 }

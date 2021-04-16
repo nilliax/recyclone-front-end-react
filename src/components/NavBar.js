@@ -6,7 +6,7 @@ function NavBar() {
     return (
         <div>
             <div className={style.flexContainer}>
-                <div className={style.logo}>WeeRecycle</div>
+                <div className={style.logo}>Recycle Pack</div>
                 <div className={style.linkElem}>
                     <Link to='/login'>Login</Link>
                 </div>
